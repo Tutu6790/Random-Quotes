@@ -7,7 +7,7 @@ body {
     background-image: url("image/sunset-214576_960_720.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-   
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     height: 100vh;
 }
@@ -19,11 +19,16 @@ body {
     width: 85%;
     
 }
+h2 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 hr{
     width: 50%;
 }
 h1 {
     font-size: 4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p {
     font-size: 2em;
@@ -42,15 +47,34 @@ button {
     border: none;
     padding: 15px;
     border-radius: 5px;
-   
+   margin: 9px;
+   ;
+}
+button:focus {
+    background-color: #f17108;
+    color: #f3f0f0de;
+    transition: ease-in 1s;
 }
 button:hover {
     background-color: rgb(250, 154, 10);
     border: 2px solid #f17108;
     transition: ease-in 1s;
     color: white;
+    box-shadow: 1px 3px 16px #b1adad;
 }
-@media only screen and (max-width: 600px) {
+footer  {
+    text-align: center;
+ padding: 20px;
+    background-color: rgba(158, 150, 150, 0.171);
+    color: rgba(253, 250, 250, 0.719);
+    position: relative;
+    margin-top:  23vh;
+    bottom: -15px;
+    margin-bottom: 11px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 768px) {
     #content {
         text-align: center; 
     }
@@ -83,6 +107,7 @@ button:hover {
     }
     button {
         font-size: 12px;
+        margin: 5px;
     }
     p {
         font-size: 10px;
@@ -95,7 +120,7 @@ button:hover {
         padding: 1em;
     }
     button {
-        font-size: 11px;
+        font-size: 9px;
         padding: 5px;
         border-radius: 5px;
     }
@@ -112,8 +137,8 @@ button:hover {
         font-weight: 300%;
     }
     button  {
-        font-size: 11px;
-        padding: 2px;
+        font-size: 8px;
+        padding: 5px;
     }
     p {
         font-size:15px;
